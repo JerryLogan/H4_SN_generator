@@ -18,34 +18,38 @@ namespace H4_SN
     {
         String lineline;
         String fmt = "00000.##";
-        String filename;
+        String file_name;
+        String desktop_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        String folder_path;
+        String number;
         int SN = 1;
         int line_count;
-        int time = 0;
-        int data = 0;
+        int loop = 0;
+
         public Form1()
         {
             InitializeComponent();
         }
-
-        String auto_path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-        String path = @"C:\Users\gan\Desktop\H4_SN";
         
+        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String number = textBox3.Text;
-            filename = textBox4.Text;
+            number = textBox3.Text;
+            folder_path = desktop_path + @"\H4_SN";
+            file_name = textBox4.Text;
             SN = int.Parse(number);
-            DirectoryInfo di = Directory.CreateDirectory(path);
-            //Console.Write("start\r\n=====\r\n");
+
+            DirectoryInfo di = Directory.CreateDirectory(folder_path);
+
             openFileDialog1.Filter = "txt files (*.txt)|*.txt";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 label1.Text = openFileDialog1.FileName;
                 
                 //lineline = sr_txt.ReadLine();
-                for (time = 1; time <= SN; time++)
+                for (loop = 1; loop <= SN; loop++)
                 {
                     StreamReader sr_txt = new StreamReader(openFileDialog1.FileName);
                     line_count = 0;
@@ -64,16 +68,16 @@ namespace H4_SN
                             switch (line_count)
                             {
                                 case 75:    //千
-                                    addr = "48"; data_temp = time / 1000;
+                                    addr = "48"; data_temp = loop / 1000;
                                     break;
                                 case 77:    //百
-                                    addr = "4A"; data_temp = (time / 100) % 10;
+                                    addr = "4A"; data_temp = (loop / 100) % 10;
                                     break;
                                 case 79:    //十
-                                    addr = "4C"; data_temp = (time / 10) % 10;
+                                    addr = "4C"; data_temp = (loop / 10) % 10;
                                     break;
                                 case 81:    //個 
-                                    addr = "4E"; data_temp = time % 10;
+                                    addr = "4E"; data_temp = loop % 10;
                                     break;
                             }
                             textBox2.Text += addr + "\t";
@@ -88,7 +92,7 @@ namespace H4_SN
                         }
 
                     }
-                    System.IO.File.WriteAllText(@"C:\Users\gan\Desktop\H4_SN\" + filename+ time.ToString(fmt) + ".txt", textBox2.Text);
+                    System.IO.File.WriteAllText(folder_path + @"\" + file_name + loop.ToString(fmt) + ".txt", textBox2.Text);
                     textBox2.Clear();
                 }
                 Console.WriteLine("There are {0} lines.",line_count);
@@ -99,13 +103,7 @@ namespace H4_SN
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String auto_path = Environment.GetFolderPath( Environment.SpecialFolder.DesktopDirectory);
-            String path = @"C:\Users\gan\Desktop\testfolder";
-            DirectoryInfo di = Directory.CreateDirectory(path);
-            for (time = 0; time < 2; time++)
-            {
-                System.IO.File.WriteAllText(@"C:\Users\gan\Desktop\testfolder\test" + time + ".txt", textBox2.Text);
-            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
