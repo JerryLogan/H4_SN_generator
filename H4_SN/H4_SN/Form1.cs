@@ -17,7 +17,8 @@ namespace H4_SN
     public partial class Form1 : Form
     {
         String lineline;
-        String fmt = "000000.##";
+        String fmt = "00000.##";
+        String filename;
         int SN = 1;
         int line_count;
         int time = 0;
@@ -34,6 +35,7 @@ namespace H4_SN
         private void button1_Click(object sender, EventArgs e)
         {
             String number = textBox3.Text;
+            filename = textBox4.Text;
             SN = int.Parse(number);
             DirectoryInfo di = Directory.CreateDirectory(path);
             //Console.Write("start\r\n=====\r\n");
@@ -86,7 +88,7 @@ namespace H4_SN
                         }
 
                     }
-                    System.IO.File.WriteAllText(@"C:\Users\gan\Desktop\H4_SN\815LP282030" + time.ToString(fmt) + ".txt", textBox2.Text);
+                    System.IO.File.WriteAllText(@"C:\Users\gan\Desktop\H4_SN\" + filename+ time.ToString(fmt) + ".txt", textBox2.Text);
                     textBox2.Clear();
                 }
                 Console.WriteLine("There are {0} lines.",line_count);
