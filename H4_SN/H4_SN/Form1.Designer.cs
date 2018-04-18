@@ -54,7 +54,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 48);
+            this.label1.Location = new System.Drawing.Point(12, 263);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 12);
             this.label1.TabIndex = 1;
@@ -63,30 +63,30 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(12, 81);
+            this.textBox1.Location = new System.Drawing.Point(12, 212);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(350, 302);
+            this.textBox1.Size = new System.Drawing.Size(350, 35);
             this.textBox1.TabIndex = 2;
             this.textBox1.Visible = false;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(368, 81);
+            this.textBox2.Location = new System.Drawing.Point(359, 212);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(350, 302);
+            this.textBox2.Size = new System.Drawing.Size(350, 35);
             this.textBox2.TabIndex = 3;
             this.textBox2.Visible = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(724, 332);
+            this.button2.Location = new System.Drawing.Point(634, 280);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 470);
+            this.ClientSize = new System.Drawing.Size(737, 321);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
