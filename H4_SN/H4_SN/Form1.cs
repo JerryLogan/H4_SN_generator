@@ -107,6 +107,10 @@ namespace H4_SN
                 System.IO.File.WriteAllText(@"C:\Users\gan\Desktop\testfolder\test" + time + ".txt", textBox2.Text);
             }
         }
-            
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1. Edit filename\n2. Edit times\n3. Press SELECT TEMPLATE");
+        }
     }
 }
