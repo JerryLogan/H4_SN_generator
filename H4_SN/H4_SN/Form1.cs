@@ -21,8 +21,9 @@ namespace H4_SN
         String file_name;
         String desktop_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         String folder_path;
-        String number;
-        int SN = 1;
+        String number; // = times
+        String SN_str;
+        
         int line_count;
         int loop = 0;
 
@@ -39,7 +40,17 @@ namespace H4_SN
             number = textBox3.Text;
             folder_path = desktop_path + @"\H4_SN";
             file_name = textBox4.Text;
-            SN = int.Parse(number);
+            SN_str = textBox_SN_1.Text;
+
+
+            String[] SN_split_16 = new String[16];
+            for (int i = 0; i < 16; i++)
+            {
+                SN_split_16[i] = SN_str.Substring(i, 1);
+                Console.WriteLine(SN_split_16[i]);
+            }
+            
+            
 
             DirectoryInfo di = Directory.CreateDirectory(folder_path);
 
@@ -49,7 +60,7 @@ namespace H4_SN
                 label1.Text = openFileDialog1.FileName;
                 
                 //lineline = sr_txt.ReadLine();
-                for (loop = 1; loop <= SN; loop++)
+                for (loop = 1; loop <= int.Parse(number); loop++)
                 {
                     StreamReader sr_txt = new StreamReader(openFileDialog1.FileName);
                     line_count = 0;

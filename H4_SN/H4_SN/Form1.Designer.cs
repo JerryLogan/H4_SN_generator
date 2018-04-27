@@ -41,6 +41,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox_SN_1 = new System.Windows.Forms.TextBox();
+            this.textBox_SN_2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +71,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(12, 170);
+            this.textBox1.Location = new System.Drawing.Point(12, 198);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -81,7 +83,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(237, 170);
+            this.textBox2.Location = new System.Drawing.Point(220, 198);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -106,6 +108,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 5;
+            this.textBox3.Text = "10";
             // 
             // pictureBox1
             // 
@@ -152,11 +155,27 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // textBox_SN_1
+            // 
+            this.textBox_SN_1.Location = new System.Drawing.Point(12, 170);
+            this.textBox_SN_1.Name = "textBox_SN_1";
+            this.textBox_SN_1.Size = new System.Drawing.Size(100, 22);
+            this.textBox_SN_1.TabIndex = 11;
+            // 
+            // textBox_SN_2
+            // 
+            this.textBox_SN_2.Location = new System.Drawing.Point(114, 170);
+            this.textBox_SN_2.Name = "textBox_SN_2";
+            this.textBox_SN_2.Size = new System.Drawing.Size(100, 22);
+            this.textBox_SN_2.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 277);
+            this.ClientSize = new System.Drawing.Size(573, 330);
+            this.Controls.Add(this.textBox_SN_2);
+            this.Controls.Add(this.textBox_SN_1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label3);
@@ -190,6 +209,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox_SN_1;
+        private System.Windows.Forms.TextBox textBox_SN_2;
     }
 }
 
