@@ -21,7 +21,7 @@ namespace H4_SN
         String file_name;
         String desktop_path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         String folder_path;
-        String number; // = times
+        String number; //  loop times
         String SN_str;
         
         int line_count;
