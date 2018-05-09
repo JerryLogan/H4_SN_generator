@@ -169,7 +169,6 @@
             this.textBox_SN_1.Name = "textBox_SN_1";
             this.textBox_SN_1.Size = new System.Drawing.Size(265, 49);
             this.textBox_SN_1.TabIndex = 11;
-            this.textBox_SN_1.Text = "8151515156743564";
             // 
             // textBox_SN_2
             // 
