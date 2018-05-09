@@ -71,12 +71,12 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(93, 247);
+            this.textBox1.Location = new System.Drawing.Point(495, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(155, 35);
+            this.textBox1.Size = new System.Drawing.Size(518, 62);
             this.textBox1.TabIndex = 2;
             this.textBox1.Visible = false;
             // 
@@ -98,9 +98,8 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "save as";
+            this.button2.Text = "gen";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
@@ -182,7 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 296);
+            this.ClientSize = new System.Drawing.Size(1025, 522);
             this.Controls.Add(this.textBox_SN_2);
             this.Controls.Add(this.textBox_SN_1);
             this.Controls.Add(this.button3);
