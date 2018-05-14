@@ -43,6 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.textBox_SN_1 = new System.Windows.Forms.TextBox();
             this.textBox_SN_2 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,14 +72,13 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(495, 12);
+            this.textBox1.Location = new System.Drawing.Point(478, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(518, 62);
+            this.textBox1.Size = new System.Drawing.Size(423, 498);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Visible = false;
             // 
             // textBox2
             // 
@@ -168,6 +168,7 @@
             this.textBox_SN_1.Name = "textBox_SN_1";
             this.textBox_SN_1.Size = new System.Drawing.Size(265, 49);
             this.textBox_SN_1.TabIndex = 11;
+            this.textBox_SN_1.Text = "1234567898765432";
             // 
             // textBox_SN_2
             // 
@@ -177,11 +178,23 @@
             this.textBox_SN_2.TabIndex = 12;
             this.textBox_SN_2.Visible = false;
             // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox5.Location = new System.Drawing.Point(898, 12);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox5.Size = new System.Drawing.Size(423, 498);
+            this.textBox5.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 522);
+            this.ClientSize = new System.Drawing.Size(1321, 522);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox_SN_2);
             this.Controls.Add(this.textBox_SN_1);
             this.Controls.Add(this.button3);
@@ -219,6 +232,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox_SN_1;
         private System.Windows.Forms.TextBox textBox_SN_2;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 
